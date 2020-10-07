@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body>
+<!-- ejs 문법 -->
+<div id="accessToken"><%=data.access_token%></div>
+<div id="refreshToken"><%=data.refresh_token%></div>
+<div id="usenum"><%=data.user_seq_no%></div>
+</body>
+<script>
+   //opener (자기를 열었던 부모창(즉, signup 페이지))으로 가서 value 값 넣어줌
+   opener.document.getElementById("userAccessToken").value =
+       document.getElementById("accessToken").textContent;
+   opener.document.getElementById("userRefreshToken").value =
+       document.getElementById("refreshToken").textContent;
+   opener.document.getElementById("userSeqNo").value =
+       document.getElementById("usenum").textContent;
+</script>
+</html>
