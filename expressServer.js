@@ -35,7 +35,7 @@ app.get("/login", function (req, res) {
   res.render("login");
 });
 
-//미들웨어 auth.js 테스트코드(토큰 같이 보내줘야 함
+//미들웨어 auth.js 테스트코드(토큰 같이 보내줘야 함)
 app.get("/authTest", auth, function (req, res) {
   console.log(req.decoded);
   res.json("환영합니다 우리 고객님");
@@ -43,8 +43,6 @@ app.get("/authTest", auth, function (req, res) {
 
 app.get("/main", function (req, res) {
   res.render("main");
-
-  
 });
 
 app.get("/balance", function (req, res) {

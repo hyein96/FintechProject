@@ -20,7 +20,6 @@
   text-transform: none;
 }
 
-
 .cc.ADA-alt::before {
   content: "\E001";
 }
